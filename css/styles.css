@@ -129,7 +129,10 @@ button {
 /* container  */
 .container {
   width: 1200px;
+
   margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Оформление Баннера  */
