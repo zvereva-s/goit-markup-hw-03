@@ -61,8 +61,6 @@ button {
 
 /* хэдэр */
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px #ececec;
 }
 .header > .container {
@@ -74,12 +72,17 @@ button {
 .logo {
   display: flex;
   align-items: center;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
   color: var(--brand-color-third);
 }
 .logo span {
@@ -107,6 +110,11 @@ button {
   margin-right: 0;
 }
 .navmenu .link {
+  display: block;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
