@@ -156,12 +156,14 @@ button {
 /* кнопка заказать на баннере  */
 .banner .order {
   display: block;
+
   margin: 30px auto 0;
+  padding: 10px 32px;
 
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.875;
 
   letter-spacing: 0.06em;
   color: var(--brand-white);
