@@ -58,10 +58,20 @@ button {
 .link {
   display: block;
 }
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+
+  margin: -1px;
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
 
 /* хэдэр */
 .header {
-  border-bottom: 1px #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header > .container {
   display: flex;
@@ -70,14 +80,11 @@ button {
 /* оформление логотипа  */
 
 .logo {
-  display: flex;
-  align-items: center;
-
   padding-top: 24px;
   padding-bottom: 24px;
 
   font-family: Raleway;
-  font-style: normal;
+
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -112,8 +119,8 @@ button {
 .navmenu .link {
   display: block;
 
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   font-weight: 500;
   font-size: 14px;
@@ -152,11 +159,16 @@ button {
 }
 /* заголовок баннера  */
 .banner .title {
+  margin: auto;
+
+  text-align: center;
+
+  width: 696px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--brand-white);
@@ -184,15 +196,11 @@ button {
 
 /* общее оформление секций  */
 .section {
-  justify-content: center;
-
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .section .list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .section .point {
   margin-right: 30px;
@@ -217,6 +225,10 @@ button {
 /* секция Особенности  */
 
 /* заголовки  */
+.features .point {
+  width: 270px;
+}
+
 .section .title.h3 {
   margin-bottom: 10px;
 
@@ -279,6 +291,11 @@ button {
 }
 .footer .logo {
   color: var(--brand-white);
+
+  padding: 0;
+}
+.footer .contacts {
+  margin-top: 20px;
 }
 .footer .list {
   font-size: 14px;
@@ -298,8 +315,12 @@ button {
 
 /* Страница Портфолио  */
 .container.portfolio {
-  padding-top: 94px;
+  padding-top: 34px;
   padding-bottom: 94px;
+}
+.container.portfolio:first-child {
+  padding-bottom: 0px;
+  padding-top: 94px;
 }
 .title.portfolio {
   text-align: center;
@@ -344,25 +365,24 @@ button {
 .list.portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 34px;
 }
 
 .list.portfolio .point {
+  margin-right: 30px;
   margin-bottom: 30px;
 
-  background-color: var(--brand-white);
+  width: 370px;
 
-  border: 1px solid #eeeeee;
+  background-color: var(--brand-white);
 }
-.list.list.portfolio .point:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+.list.portfolio .point:nth-last-child(3n + 1) {
+  margin-right: 0;
 }
 
 .portfolio .title {
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 
   font-weight: bold;
   font-size: 18px;
@@ -383,4 +403,10 @@ button {
   letter-spacing: 0.03em;
 
   color: #757575;
+}
+
+.caption {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
